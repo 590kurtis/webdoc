@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L habillage  exposition au musee eugene carriere des elegantes</title>
+    
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fleur+De+Leah&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#accueil" class="nav-link active">Accueil</a>
+        <a href="#plan-expo" class="nav-link">Plan de l'exposition</a>
+     
+    </nav>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383.26 159.48">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        letter-spacing: 0em;
+                      }
+
+                      .cls-2 {
+                        font-family: EdwardianScriptITC, 'Edwardian Script ITC';
+                        font-size: 79.68px;
+                      }
+
+                      .cls-2, .cls-3 {
+                        fill: #fff;
+                      }
+
+                      .cls-4 {
+                        letter-spacing: -.02em;
+                      }
+
+                      .cls-5 {
+                        letter-spacing: -.03em;
+                      }
+
+                      .cls-3 {
+                        font-family: SwitzerVariable-Regular, 'Switzer Variable';
+                        font-size: 17.17px;
+                        font-variation-settings: 'wght' 400;
+                      }
+                    </style>
+                  </defs>
+                  <g id="Calque_1-2" data-name="Calque 1">
+                    <g>
+                      <text class="cls-2" transform="translate(72.44 65.34)"><tspan x="0" y="0">L'habillage</tspan><tspan x=".45" y="68">des élégantes</tspan></text>
+                      <text class="cls-3" transform="translate(0 91.99)"><tspan class="cls-1" x="0" y="0" xml:space="preserve">EXPOSITION     </tspan><tspan class="cls-4" x="117.56" y="0"> </tspan><tspan class="cls-5" x="120.6" y="0">A</tspan><tspan class="cls-1" x="131.81" y="0" xml:space="preserve">U MUSEE EUGENE        </tspan><tspan class="cls-4" x="303.23" y="0">C</tspan><tspan class="cls-1" x="314.53" y="0">ARRIERE</tspan></text>
+                    </g>
+                  </g>
+                </svg>
+                <p class="subtitle">Plongez dans l'intimité du peintre.</p>
+            </div>
+            <a href="#plan-expo" class="scroll-down-icon" aria-label="Faire défiler vers le bas">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="currentColor" d="M12 16.5l-6-6 1.41-1.41L12 13.67l4.59-4.58L18 10.5z"/></svg>
+            </a>
+        </section>
+
+        <section id="plan-expo">
+            <div class="container">
+                <h2>Le Parcours de l'Exposition</h2>
+                <p>Suivez les étapes et cliquez sur une salle pour découvrir les œuvres.</p>
+                <div class="map-container-grid">
+                    <div id="entree" class="room room-interactive" data-room="entree"><span class="room-number">1</span>ENTRÉE</div>
+                    <div id="wtv1" class="room room-interactive" data-room="wtv1"><span class="room-number">2</span>WTV</div>
+                    <div id="wtv2" class="room room-interactive" data-room="wtv2"><span class="room-number">3</span>WTV</div>
+                    <div id="wtv3" class="room room-interactive" data-room="wtv3"><span class="room-number">4</span>WTV</div>
+                    <div id="wtv4" class="room room-interactive" data-room="wtv4"><span class="room-number">5</span>WTV</div>
+                    <div id="fin-parcours" class="room room-interactive" data-room="fin-parcours"><span class="room-number">6</span>FIN DE<br>PARCOURS</div>
+                    <div id="reserve" class="room">RÉSERVE</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="infos-pratiques">
+        <div class="container">
+            <h2>Informations Pratiques</h2>
+            <div class="info-grid">
+                <div class="column">
+                    <h3>Horaires</h3>
+                    <p> Dimanche : 15h00 - 18h00. </p>
+                    <h3>Adresse</h3>
+                    <p>5 Rue Ernest Pêcheux, 93460 Gournay-sur-Marne</p>
+                </div>
+                <div class="column">
+                    <h3>L'Artiste</h3>
+                    <p>Découvrez l'homme derrière le pinceau et comprenez son influence sur le mouvement symboliste à travers son portrait et ses œuvres.</p>
+                </div>
+                <div class="artist-portrait-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Eug%C3%A8ne_Carri%C3%A8re_-_Portrait_de_l%27artiste_par_lui-m%C3%AAme.jpg/800px-Eug%C3%A8ne_Carri%C3%A8re_-_Portrait_de_l%27artiste_par_lui-m%C3%AAme.jpg" alt="Portrait d'Eugène Carrière" class="artist-portrait">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer la fenêtre">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
+
+
